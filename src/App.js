@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import SearchComponent from "./components/Search-component";
+import StoreList from "./components/Store-list";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-container">
+      <div className="header">
+        <SearchComponent />
+      </div>
+      <StoreList />
+      <div
+        className="map-container"
+        // style={{ marginTop: "-126px", marginLeft: "268px" }}
+      >
+        <img src="/map.png" alt="" />
+      </div>
     </div>
   );
 }
