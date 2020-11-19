@@ -22,7 +22,7 @@ const Storelist = ({ stores }) => {
         <h2>Closest Stores</h2>
         <p>To get the closest stores, enter your postcode.</p>
         <div className="ui styled fluid accordion">
-          <div className="title" style={{ display: "flexbox" }}>
+          <div className="title" style={{ display: "flex" }}>
             <h4 style={{ display: "flex", justifyContent: "space-between" }}>
               1. Wonderland store
               <i className="dropdown icon"></i>
